@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/52988f804d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+
+        <img src="img/cover.jpg" alt="cover" class="song-img" />
+        <h1>Perfect</h1>
+        <p>Ed Sheeran</p>
+        <audio id="song">
+          <source src="song.mp3" type="audio/mpeg" />
+        </audio>
+
+        <input type="range" value="0" name="" id="progress" />
+        <div class="controls1">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()" id="play">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+        <div class="controls">
+          <div id="cross">
+            <i
+              class="fa-solid fa-xmark fa-shake fa-2xl"
+              style="color: #330b7f"
+            ></i>
+          </div>
+          <div id="heart">
+            <i
+              class="fa-solid fa-heart fa-flip fa-2xl"
+              style="color: #ff0000"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
